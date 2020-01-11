@@ -26,8 +26,7 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 
 | **Model**                    | **Link**                                  |
 |------------------------------|--------------------------------------------|
-| `Facial Pose Estimation Model`|[ONNX Model](https://github.com/NeuralVFX/facial-pose-estimation-pytorch/blob/master/output/test_run_3_opt.onnx)
-|
+| `Facial Pose Estimation Model`|[ONNX Model](https://github.com/NeuralVFX/facial-pose-estimation-pytorch/blob/master/output/test_run_3_opt.onnx)|
 | `Face Detection SSD Meta`                   | [deploy.prototxt](https://github.com/spmallick/learnopencv/blob/master/FaceDetectionComparison/models/deploy.prototxt) |
 | `Face Detection SSD Model`                  |    [res10_300x300_ssd_iter_140000_fp16.caffemodel](https://github.com/spmallick/learnopencv/raw/master/FaceDetectionComparison/models/res10_300x300_ssd_iter_140000_fp16.caffemodel)                                        |
 | `Landmark Detection Model`     |      [shape_predictor_68_face_landmarks.dat](https://github.com/italojs/facial-landmarks-recognition-/blob/master/shape_predictor_68_face_landmarks.dat)|
