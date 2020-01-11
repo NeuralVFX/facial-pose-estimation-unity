@@ -31,6 +31,30 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 | `Face Detection SSD Model`                  |    [res10_300x300_ssd_iter_140000_fp16.caffemodel](https://github.com/spmallick/learnopencv/raw/master/FaceDetectionComparison/models/res10_300x300_ssd_iter_140000_fp16.caffemodel)                                        |
 | `Landmark Detection Model`     |      [shape_predictor_68_face_landmarks.dat](https://github.com/italojs/facial-landmarks-recognition-/blob/master/shape_predictor_68_face_landmarks.dat)|
 
+
+## Scripts
+
+### GetExpression.cs
+```
+--Momentum Weight, default=2.0, type=float                     # How far in the future to guess value, based on previus two frames (1.0 means no projection into the future)
+--Smoothing Weight, default=.8; type=float                     # Blend ratio between inference value at this frame, and projected value based on previos two frames
+```
+### GetHeadTransform.cs
+```
+--Momentum Weight, default=2.0, type=float                     # How far in the future to guess value, based on previus two frames (1.0 means no projection into the future)
+--Smoothing Weight, default=.8; type=float                     # Blend ratio between inference value at this frame, and projected value based on previos two frames
+```
+### OpenCVFaceDetection.cs
+```
+--Detect Ratio, default=1, type=int                            # Amount to scale down image before Bounding Box detector
+--Cam Id, default=0, type=int                                  # ID of camera to run stream from(Front, Back, etc...)
+--Fov Zoom, default=1.0, type=float                            # FOV Zoom multiplier, high value will shrink FOV use for PnP Solve
+--Draw Face Points, default=false, type=bool                   # Whether or not to draw points and axis ornament on face
+```
+### GetFrame.cs
+```
+--Texture Resolution, default=1024, type=int                   # Resolution of video feed texture
+```
 ## Use
 - Open `facial-pose-estimation-unity` as a Unity project
 - Within the project, open the scene `\Assets\Scenes\SampleScene.unity`
