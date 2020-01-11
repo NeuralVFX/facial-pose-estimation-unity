@@ -36,24 +36,24 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 
 ### GetExpression.cs
 ```
---Momentum Weight, default=2.0, type=float                     # How far in the future to guess value, based on previus two frames (1.0 means no projection into the future)
---Smoothing Weight, default=.8; type=float                     # Blend ratio between inference value at this frame, and projected value based on previos two frames
+--Momentum Weight, default=2.0, type=float     # How far in the future to guess value, based on previus two frames (1.0 means no projection into the future)
+--Smoothing Weight, default=.8; type=float     # Blend ratio between inference value at this frame, and projected value based on previos two frames
 ```
 ### GetHeadTransform.cs
 ```
---Momentum Weight, default=2.0, type=float                     # How far in the future to guess value, based on previus two frames (1.0 means no projection into the future)
---Smoothing Weight, default=.8; type=float                     # Blend ratio between inference value at this frame, and projected value based on previos two frames
+--Momentum Weight, default=2.0, type=float     # How far in the future to guess value, based on previus two frames (1.0 means no projection into the future)
+--Smoothing Weight, default=.8; type=float     # Blend ratio between inference value at this frame, and projected value based on previos two frames
 ```
 ### OpenCVFaceDetection.cs
 ```
---Detect Ratio, default=1, type=int                            # Amount to scale down image before Bounding Box detector
---Cam Id, default=0, type=int                                  # ID of camera to run stream from(Front, Back, etc...)
---Fov Zoom, default=1.0, type=float                            # FOV Zoom multiplier, high value will shrink FOV use for PnP Solve
---Draw Face Points, default=false, type=bool                   # Whether or not to draw points and axis ornament on face
+--Detect Ratio, default=1, type=int            # Amount to scale down image before Bounding Box detector
+--Cam Id, default=0, type=int                  # ID of camera to run stream from(Front, Back, etc...)
+--Fov Zoom, default=1.0, type=float            # FOV Zoom multiplier, high value will shrink FOV use for PnP Solve
+--Draw Face Points, default=false, type=bool   # Whether or not to draw points and axis ornament on face
 ```
 ### GetFrame.cs
 ```
---Texture Resolution, default=1024, type=int                   # Resolution of video feed texture
+--Texture Resolution, default=1024, type=int   # Resolution of video feed texture
 ```
 ## Use
 - Open `facial-pose-estimation-unity` as a Unity project
