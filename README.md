@@ -20,7 +20,7 @@ This blog post describes the whole project: [AR Facial Pose Estimation](http://n
 - The `Neural Net` used by the project can be found here: [facial-pose-estimation-pytorch](https://github.com/NeuralVFX/facial-pose-estimation-pytorch)
 
 ## Estimation Pipeline Diagram
-![](examples/pipeline_b.png)
+![](examples/unity_pipeline.png)
 
 ## Code Usage
 Usage instructions found here: [user manual page](USAGE.md).
