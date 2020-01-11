@@ -35,7 +35,7 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 ## Scripts
 
 ### GetExpression.cs
-- Should by applied to face model
+- Should be applied to face model
 - Reads blend-shape values, and sets them on the facial mesh
 - Uses momentum to smooth values temporally
 ```
@@ -43,11 +43,16 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 --Smoothing Weight, default=.8, type=float     # Blend ratio between inference value at this frame, and projected value based on previos two frames
 ```
 ### GetHeadTransform.cs
+- Should be applied to transform above facial model
+- Reads position and rotation values, and sets them on transform
+- Uses momentum to smooth values temporally
 ```
 --Momentum Weight, default=2.0, type=float     # How far in the future to guess value, based on previus two frames (1.0 means no projection into the future)
 --Smoothing Weight, default=.8, type=float     # Blend ratio between inference value at this frame, and projected value based on previos two frames
 ```
 ### OpenCVFaceDetection.cs
+- Should be applied to camera
+- Opens and runs OpenCV interop
 ```
 --Detect Ratio, default=1, type=int            # Amount to scale down image before Bounding Box detector
 --Cam Id, default=0, type=int                  # ID of camera to run stream from(Front, Back, etc...)
@@ -55,6 +60,8 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 --Draw Face Points, default=false, type=bool   # Whether or not to draw points and axis ornament on face
 ```
 ### GetFrame.cs
+- Should be applied to BG plane object
+- Retrieves video stream and applies to BG plane as a texture
 ```
 --Texture Resolution, default=1024, type=int   # Resolution of video feed texture
 ```
