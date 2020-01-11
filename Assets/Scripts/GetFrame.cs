@@ -13,7 +13,7 @@ public class GetFrame : MonoBehaviour
     private IntPtr pixel_ptr;
 
     // Resolution
-    public int texture_resolution = 1024;
+    public int textureResolution = 1024;
 
     void Start()
     {
@@ -28,7 +28,7 @@ public class GetFrame : MonoBehaviour
 
     void InitTexture()
     {
-        tex = new Texture2D(texture_resolution, texture_resolution, TextureFormat.ARGB32, false, false);
+        tex = new Texture2D(textureResolution, textureResolution, TextureFormat.ARGB32, false, false);
         pixel32 = tex.GetPixels32();
         // Pin pixel32 array
         pixel_handle = GCHandle.Alloc(pixel32, GCHandleType.Pinned);
