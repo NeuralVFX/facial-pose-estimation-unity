@@ -17,8 +17,8 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 ## Setting Up Plugin
 
 #### Plugin DLLs
-- Copy `.dll` files from `OpenCV` `Bin` folder into `unity-head-pose-example\Assets\Plugins`
-- Copy `facial-pose-estimation-opencv.dll` into  `unity-head-pose-example\Assets\Plugins`
+- Copy `.dll` files from `OpenCV` `Bin` folder into `facial-pose-estimation-unity\Assets\Plugins`
+- Copy `facial-pose-estimation-opencv.dll` into  `facial-pose-estimation-unity\Assets\Plugins`
 
 #### Models
 - Download the `SSD`, `Landmark Detection`, and `Facial Pose Estimation` models and place into `facial-pose-estimation-opencv`
