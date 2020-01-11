@@ -35,14 +35,17 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 ## Scripts
 
 ### GetExpression.cs
+- Should by applied to face model
+- Reads blend-shape values, and sets them on the facial mesh
+- Uses momentum to smooth values temporally
 ```
 --Momentum Weight, default=2.0, type=float     # How far in the future to guess value, based on previus two frames (1.0 means no projection into the future)
---Smoothing Weight, default=.8; type=float     # Blend ratio between inference value at this frame, and projected value based on previos two frames
+--Smoothing Weight, default=.8, type=float     # Blend ratio between inference value at this frame, and projected value based on previos two frames
 ```
 ### GetHeadTransform.cs
 ```
 --Momentum Weight, default=2.0, type=float     # How far in the future to guess value, based on previus two frames (1.0 means no projection into the future)
---Smoothing Weight, default=.8; type=float     # Blend ratio between inference value at this frame, and projected value based on previos two frames
+--Smoothing Weight, default=.8, type=float     # Blend ratio between inference value at this frame, and projected value based on previos two frames
 ```
 ### OpenCVFaceDetection.cs
 ```
