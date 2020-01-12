@@ -26,7 +26,7 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 
 | **Model**                    | **Link**                                  |
 |------------------------------|--------------------------------------------|
-| `Facial Pose Estimation Model`|[ONNX Model](https://github.com/NeuralVFX/facial-pose-estimation-pytorch/blob/master/output/test_run_3_opt.onnx)|
+| `Facial Pose Estimation Model`|[opt_model.onnx](https://github.com/NeuralVFX/facial-pose-estimation-pytorch/blob/master/output/test_run_3_opt.onnx)|
 | `Face Detection SSD Meta`                   | [deploy.prototxt](https://github.com/spmallick/learnopencv/blob/master/FaceDetectionComparison/models/deploy.prototxt) |
 | `Face Detection SSD Model`                  |    [res10_300x300_ssd_iter_140000_fp16.caffemodel](https://github.com/spmallick/learnopencv/raw/master/FaceDetectionComparison/models/res10_300x300_ssd_iter_140000_fp16.caffemodel)                                        |
 | `Landmark Detection Model`     |      [shape_predictor_68_face_landmarks.dat](https://github.com/italojs/facial-landmarks-recognition-/blob/master/shape_predictor_68_face_landmarks.dat)|
@@ -58,6 +58,7 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 --Cam Id, default=0, type=int                  # ID of camera to run stream from(Front, Back, etc...)
 --Fov Zoom, default=1.0, type=float            # FOV Zoom multiplier, high value will shrink FOV use for PnP Solve
 --Draw Face Points, default=false, type=bool   # Whether or not to draw points and axis ornament on face
+--Lock Eyes Nose, default=true, type=bool      # Whether or not to consider blendshapes for eyes and nose during PnP Solve
 ```
 ### GetFrame.cs
 - Should be applied to BG plane object

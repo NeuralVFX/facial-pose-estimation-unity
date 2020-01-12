@@ -1,4 +1,4 @@
-![](examples/example_celeb.gif)
+![](examples/example_celeb_a.gif)
 # Facial-Pose-Estimation-Unity
 
 This repository is a Unity Project demonstrating realtime AR Facial Pose Estimation. This utilizes a plugin DLL from my [facial-pose-estimation-opencv](https://github.com/NeuralVFX/facial-pose-estimation-opencv) project and a custom trained Neural Net from my [facial-pose-estimation-pytorch](https://github.com/NeuralVFX/facial-pose-estimation-pytorch) project.
