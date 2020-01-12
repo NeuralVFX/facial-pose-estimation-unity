@@ -1,15 +1,14 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Runtime.InteropServices;
-using System;
+using UnityEngine;
 
 
 internal static class OpenCVInterop
 {
 
     [DllImport("facial-pose-estimation-opencv")]
-    internal static extern int Init(ref int outCameraWidth, ref int outCameraHeight, int ratio, int camId, float fovZoom, bool draw);
+    internal static extern int Init(ref int outCameraWidth, ref int outCameraHeight, int ratio, int camId, float fovZoom, bool draw, bool lockEyesNose);
 
     [DllImport("facial-pose-estimation-opencv")]
     internal static extern int Close();
@@ -49,6 +48,7 @@ public class OpenCVFaceDetection : MonoBehaviour
     public int camId;
     public float fovZoom = 1.0f;
     public bool drawFacePoints = false;
+    public bool lockEyesNose = true;
 
     private bool _ready = false;
     private TransformData faces;
@@ -57,7 +57,7 @@ public class OpenCVFaceDetection : MonoBehaviour
     {
         // Initiate Open CV Wrapper
         int cam_width = 1920, cam_height = 1080;
-        int result = OpenCVInterop.Init(ref cam_width, ref cam_height, detectRatio, camId, fovZoom, drawFacePoints);
+        int result = OpenCVInterop.Init(ref cam_width, ref cam_height, detectRatio, camId, fovZoom, drawFacePoints, lockEyesNose);
 
         // Setup camera FOV
         float vfov = 2.0f * Mathf.Atan(0.5f * (cam_height) /( cam_width * fovZoom)) * Mathf.Rad2Deg;

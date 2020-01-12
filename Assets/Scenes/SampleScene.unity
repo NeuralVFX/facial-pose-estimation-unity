@@ -193,6 +193,7 @@ MonoBehaviour:
   camId: 1
   fovZoom: 1
   drawFacePoints: 0
+  lockEyesNose: 1
 --- !u!224 &945758782
 RectTransform:
   m_ObjectHideFlags: 0
@@ -572,7 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d11fa4b55d28a4a94e1450a09caa91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture_resolution: 1024
+  textureResolution: 1024
 --- !u!64 &1891640658
 MeshCollider:
   m_ObjectHideFlags: 0
