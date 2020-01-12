@@ -21,7 +21,7 @@ git clone https://github.com/NeuralVFX/facial-pose-estimation-unity.git
 - Copy `facial-pose-estimation-opencv.dll` into  `facial-pose-estimation-unity\Assets\Plugins`
 
 #### Models
-- Download the `SSD`, `Landmark Detection`, and `Facial Pose Estimation` models and place into `facial-pose-estimation-opencv`
+- Download the `SSD`, `Landmark Detection`, and `Facial Pose Estimation` models and place into `facial-pose-estimation-unity`
 - Rename the `Facial Pose Estimation` model `opt_model.onnx`
 
 | **Model**                    | **Link**                                  |
